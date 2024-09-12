@@ -6,7 +6,7 @@ app = Flask(__name__)
 def receive_alert():
     try:
         data = request.json
-        #print(data)
+        print(data)
         if not data:
             return jsonify({"error": "Invalid data"}), 400
         
